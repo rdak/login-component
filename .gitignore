@@ -1,4 +1,4 @@
-/node_modules
+/**/node_modules
 /build
 .idea/
 .vscode/
@@ -6,4 +6,4 @@
 .npm
 .eslintcache
 .stylelintcache
-/examples
+/dist
