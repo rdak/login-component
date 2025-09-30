@@ -10,22 +10,7 @@ const DrawerContent: React.FC<LoginComponentProps> = ({
     onAuthSuccess,
 }) => {
     return (
-        <Drawer
-            anchor="bottom"
-            open={isOpen}
-            onClose={onClose}
-            role="dialog"
-            aria-modal="true"
-            aria-label="Authentication Form"
-            sx={{
-                "& .MuiDrawer-paper": {
-                    width: "100%",
-                    maxWidth: "100%",
-                    height: "auto",
-                    maxHeight: "90vh",
-                },
-            }}
-        >
+        <Drawer anchor="left" open={isOpen} onClose={onClose}>
             <Box sx={{ position: "relative" }}>
                 <AuthForm onClose={onClose} onAuthSuccess={onAuthSuccess} />
             </Box>
